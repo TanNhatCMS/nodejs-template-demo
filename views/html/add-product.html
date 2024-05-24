@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Product</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .main-header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        .main-header-nav {
+            display: flex;
+            justify-content: space-between;
+        }
+        .main-header-item-list {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .main-header-item {
+            margin-right: 10px;
+        }
+        main {
+            margin-top: 20px;
+        }
+        footer {
+            margin-top: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="container">
+<header class="main-header">
+    <nav class="main-header-nav">
+        <ul class="main-header-item-list">
+            <li class="main-header-item"><a href="/public">Home</a></li>
+            <li class="main-header-item"><a href="/admin/add-product">Add Product</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <form action="/admin/add-product" method="POST">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title">
+        <button type="submit">Add Product</button>
+    </form>
+    <h1>List of products</h1>
+</main>
+<footer>
+    <p>Copyright &copy; 2023</p>
+</footer>
+</body>
+</html>
