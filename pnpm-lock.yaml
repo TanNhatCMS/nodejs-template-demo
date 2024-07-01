@@ -16,7 +16,7 @@ importers:
         version: 1.4.6
       debug:
         specifier: ~4.3.4
-        version: 4.3.4(supports-color@5.5.0)
+        version: 4.3.5(supports-color@5.5.0)
       ejs:
         specifier: ^3.1.10
         version: 3.1.10
@@ -142,8 +142,8 @@ packages:
       supports-color:
         optional: true
 
-  debug@4.3.4:
-    resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
+  debug@4.3.5:
+    resolution: {integrity: sha512-pt0bNEmneDIvdL1Xsd9oDQ/wrQRkXDT4AUWlNZNPKvW5x/jyO9VFXkJUP07vQ2upmw5PlaITaPKc31jK13V+jg==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -601,7 +601,7 @@ snapshots:
     dependencies:
       ms: 2.0.0
 
-  debug@4.3.4(supports-color@5.5.0):
+  debug@4.3.5(supports-color@5.5.0):
     dependencies:
       ms: 2.1.2
     optionalDependencies:
@@ -814,7 +814,7 @@ snapshots:
   nodemon@3.1.0:
     dependencies:
       chokidar: 3.6.0
-      debug: 4.3.4(supports-color@5.5.0)
+      debug: 4.3.5(supports-color@5.5.0)
       ignore-by-default: 1.0.1
       minimatch: 3.1.2
       pstree.remy: 1.1.8
