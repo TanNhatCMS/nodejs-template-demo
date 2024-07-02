@@ -34,7 +34,7 @@ importers:
         version: 1.10.0
       rotating-file-stream:
         specifier: ^3.2.1
-        version: 3.2.1
+        version: 3.2.3
     devDependencies:
       nodemon:
         specifier: ^3.1.0
@@ -403,8 +403,8 @@ packages:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
     engines: {node: '>=8.10.0'}
 
-  rotating-file-stream@3.2.1:
-    resolution: {integrity: sha512-n2B18CJb+n2VA5Tdle+1NP2toEcRv68CjAOBjHmwcyswNwMVsrN3gVRZ9ymH3sapaiGY8jc9OhhV5b6I5rAeiA==}
+  rotating-file-stream@3.2.3:
+    resolution: {integrity: sha512-cfmm3tqdnbuYw2FBmRTPBDaohYEbMJ3211T35o6eZdr4d7v69+ZeK1Av84Br7FLj2dlzyeZSbN6qTuXXE6dawQ==}
     engines: {node: '>=14.0'}
 
   safe-buffer@5.1.2:
@@ -868,7 +868,7 @@ snapshots:
     dependencies:
       picomatch: 2.3.1
 
-  rotating-file-stream@3.2.1: {}
+  rotating-file-stream@3.2.3: {}
 
   safe-buffer@5.1.2: {}
 
