@@ -10,19 +10,19 @@ importers:
     dependencies:
       body-parser:
         specifier: ^1.20.2
-        version: 1.20.2
+        version: 1.20.2(supports-color@5.5.0)
       cookie-parser:
         specifier: ~1.4.6
         version: 1.4.6
       debug:
-        specifier: ~4.3.4
-        version: 4.3.4(supports-color@5.5.0)
+        specifier: ~4.4.0
+        version: 4.4.3(supports-color@5.5.0)
       ejs:
         specifier: ^3.1.10
         version: 3.1.10
       express:
         specifier: ^4.19.2
-        version: 4.19.2
+        version: 4.19.2(supports-color@5.5.0)
       express-ejs-layouts:
         specifier: ^2.5.1
         version: 2.5.1
@@ -31,7 +31,7 @@ importers:
         version: 2.0.0
       morgan:
         specifier: ~1.10.0
-        version: 1.10.0
+        version: 1.10.0(supports-color@5.5.0)
       rotating-file-stream:
         specifier: ^3.2.1
         version: 3.2.1
@@ -142,8 +142,8 @@ packages:
       supports-color:
         optional: true
 
-  debug@4.3.4:
-    resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
+  debug@4.4.3:
+    resolution: {integrity: sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -335,9 +335,6 @@ packages:
   ms@2.0.0:
     resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
 
-  ms@2.1.2:
-    resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
-
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
@@ -515,11 +512,11 @@ snapshots:
 
   binary-extensions@2.3.0: {}
 
-  body-parser@1.20.2:
+  body-parser@1.20.2(supports-color@5.5.0):
     dependencies:
       bytes: 3.1.2
       content-type: 1.0.5
-      debug: 2.6.9
+      debug: 2.6.9(supports-color@5.5.0)
       depd: 2.0.0
       destroy: 1.2.0
       http-errors: 2.0.0
@@ -597,13 +594,15 @@ snapshots:
 
   cookie@0.6.0: {}
 
-  debug@2.6.9:
+  debug@2.6.9(supports-color@5.5.0):
     dependencies:
       ms: 2.0.0
+    optionalDependencies:
+      supports-color: 5.5.0
 
-  debug@4.3.4(supports-color@5.5.0):
+  debug@4.4.3(supports-color@5.5.0):
     dependencies:
-      ms: 2.1.2
+      ms: 2.1.3
     optionalDependencies:
       supports-color: 5.5.0
 
@@ -637,21 +636,21 @@ snapshots:
 
   express-ejs-layouts@2.5.1: {}
 
-  express@4.19.2:
+  express@4.19.2(supports-color@5.5.0):
     dependencies:
       accepts: 1.3.8
       array-flatten: 1.1.1
-      body-parser: 1.20.2
+      body-parser: 1.20.2(supports-color@5.5.0)
       content-disposition: 0.5.4
       content-type: 1.0.5
       cookie: 0.6.0
       cookie-signature: 1.0.6
-      debug: 2.6.9
+      debug: 2.6.9(supports-color@5.5.0)
       depd: 2.0.0
       encodeurl: 1.0.2
       escape-html: 1.0.3
       etag: 1.8.1
-      finalhandler: 1.2.0
+      finalhandler: 1.2.0(supports-color@5.5.0)
       fresh: 0.5.2
       http-errors: 2.0.0
       merge-descriptors: 1.0.1
@@ -663,8 +662,8 @@ snapshots:
       qs: 6.11.0
       range-parser: 1.2.1
       safe-buffer: 5.2.1
-      send: 0.18.0
-      serve-static: 1.15.0
+      send: 0.18.0(supports-color@5.5.0)
+      serve-static: 1.15.0(supports-color@5.5.0)
       setprototypeof: 1.2.0
       statuses: 2.0.1
       type-is: 1.6.18
@@ -681,9 +680,9 @@ snapshots:
     dependencies:
       to-regex-range: 5.0.1
 
-  finalhandler@1.2.0:
+  finalhandler@1.2.0(supports-color@5.5.0):
     dependencies:
-      debug: 2.6.9
+      debug: 2.6.9(supports-color@5.5.0)
       encodeurl: 1.0.2
       escape-html: 1.0.3
       on-finished: 2.4.1
@@ -793,10 +792,10 @@ snapshots:
     dependencies:
       brace-expansion: 2.0.1
 
-  morgan@1.10.0:
+  morgan@1.10.0(supports-color@5.5.0):
     dependencies:
       basic-auth: 2.0.1
-      debug: 2.6.9
+      debug: 2.6.9(supports-color@5.5.0)
       depd: 2.0.0
       on-finished: 2.3.0
       on-headers: 1.0.2
@@ -805,8 +804,6 @@ snapshots:
 
   ms@2.0.0: {}
 
-  ms@2.1.2: {}
-
   ms@2.1.3: {}
 
   negotiator@0.6.3: {}
@@ -814,7 +811,7 @@ snapshots:
   nodemon@3.1.0:
     dependencies:
       chokidar: 3.6.0
-      debug: 4.3.4(supports-color@5.5.0)
+      debug: 4.4.3(supports-color@5.5.0)
       ignore-by-default: 1.0.1
       minimatch: 3.1.2
       pstree.remy: 1.1.8
@@ -878,9 +875,9 @@ snapshots:
 
   semver@7.6.2: {}
 
-  send@0.18.0:
+  send@0.18.0(supports-color@5.5.0):
     dependencies:
-      debug: 2.6.9
+      debug: 2.6.9(supports-color@5.5.0)
       depd: 2.0.0
       destroy: 1.2.0
       encodeurl: 1.0.2
@@ -896,12 +893,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  serve-static@1.15.0:
+  serve-static@1.15.0(supports-color@5.5.0):
     dependencies:
       encodeurl: 1.0.2
       escape-html: 1.0.3
       parseurl: 1.3.3
-      send: 0.18.0
+      send: 0.18.0(supports-color@5.5.0)
     transitivePeerDependencies:
       - supports-color
 
